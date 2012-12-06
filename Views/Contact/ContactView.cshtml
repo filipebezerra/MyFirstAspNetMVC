@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "ContactView";
+}
+
+<h1>Contacte-nos</h1>
+
+<form action="/Contact/MyContacts" method="post">
+    <fieldset>
+        <legend>Preencha os campos correspondentes</legend>
+        <div>
+            <label for="txtName">Nome</label>
+        </div>
+        <div>
+           <input type="text" id="txtName" name="name" size="40" />
+        </div>
+        <div>
+            <label for="txtEmail">Email</label>
+        </div>
+        <div>
+            <input type="email" id="txtEmail" name="email" size="50" />
+        </div>
+        <div>
+            <label for="txtCellPhone">Celular</label>
+        </div>
+        <div>
+            <input type="tel" id="txtCellPhone" name="cellPhone" />
+        </div>
+        <div>
+            <label for="txtAreaReason">Motivo</label>
+        </div>
+        <div>
+            <textarea id="txtAreaReason" cols="100" rows="8" name="reason"> </textarea>
+        </div>
+        <p><input type="submit" value="Enviar" />@Html.ActionLink("Voltar para a página inicial", "Index", "Home")</p>
+    </fieldset>
+</form>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "MyContacts";
+}
+<h1>Meu Contatos</h1>
+
+<p>
+    Esta <b>View</b> apresenta meus contatos que vieram de uma <b>Model</b>.
+</p>
+
+<table border="0">
+    <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Celular</th>
+    </tr>
+    <tr>
+        <td>@ViewData["name"]</td>
+        <td>@ViewData["email"]</td>
+        <td>@ViewData["cellPhone"]</td>
+    </tr>
+</table>

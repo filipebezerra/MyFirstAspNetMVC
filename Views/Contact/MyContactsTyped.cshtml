@@ -1,0 +1,36 @@
+﻿@model MyFirstAspNetMVC.Models.Contact
+
+@{
+    ViewBag.Title = "MyContactsTyped";
+}
+
+<h1>Meu Contatos - Versão Tipada</h1>
+
+<p>
+    Esta <b>View</b> apresenta meus contatos que vieram de uma <b>Model</b><br>
+    tipada, ou seja, a minha <b>View</b> é servida pela <b>Model</b> que foi<br>
+    passada na minha <b>Action</b>.
+</p>
+
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Celular</th>
+    </tr>
+    <tr>
+        <td>@Model.name</td>
+        <td>@Model.email</td>
+        <td>@Model.cellPhone</td>
+    </tr>
+</table>
+<br><br>
+<footer>
+    Ao final das contas, a minha <b>View</b> poderá ser servida pelo <b>Controller</b><br>
+    de três formas, sendo eles:<br>
+    <ul>
+        <li>ViewData: Arrays contendo qualquer tipo de dado</li>
+        <li>ViewBag: Array dinâmico contendo qualquer dado criado dinamicamente</li>
+        <li>Typed Views: View tipada por uma determinada Model</li>
+    </ul>
+</footer>
